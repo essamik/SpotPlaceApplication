@@ -40,7 +40,7 @@ public class EventMoteurManager implements EventMoteurManagerLocal {
 
         ClientConfig config = new DefaultClientConfig();
         Client client2 = Client.create(config);
-        WebResource r2 = client2.resource("http://localhost:8080/SpotPlaceMoteur/webresources/events");
+        WebResource r2 = client2.resource("http://127.0.0.1:8080/SpotPlaceMoteur-master/webresources/events");
         String jsonObject = "";
         jsonObject = "{\"application\": {\"id\": \"1\"},\"player\": {\"id\": \"" + playerId + "\"},\"type\": \"" + type + "\"}";
 
@@ -54,7 +54,7 @@ public class EventMoteurManager implements EventMoteurManagerLocal {
 
         ClientConfig config = new DefaultClientConfig();
         Client client2 = Client.create(config);
-        WebResource r2 = client2.resource("http://localhost:8080/SpotPlaceMoteur/webresources/events");
+        WebResource r2 = client2.resource("http://127.0.0.1:8080/SpotPlaceMoteur-master/webresources/events");
         String jsonObject = "";
         jsonObject = "{\"application\": {\"id\": \"1\"},\"player\": {\"id\": \"" + playerId + "\"},\"type\": \"" + type + "\"}";
 
@@ -125,7 +125,7 @@ public class EventMoteurManager implements EventMoteurManagerLocal {
         try {
             ClientConfig config = new DefaultClientConfig();
             Client client = Client.create(config);
-            WebResource r = client.resource("http://localhost:8080/SpotPlaceMoteur/webresources/players/" + playerId);
+            WebResource r = client.resource("http://127.0.0.1:8080/SpotPlaceMoteur-master/webresources/players/" + playerId);
             ClientResponse response = r.accept("application/json").get(ClientResponse.class);
             JSONObject player = response.getEntity(JSONObject.class);
 
