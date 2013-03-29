@@ -1,7 +1,11 @@
 SpotPlaceApplication
 ====================
 
-Application back-end lié au moteur de gamification.
+Back-end linked to the engine of gamification.
+
+Please download the .zip folder at the root of the repository
+
+------------------------------------------------------------------
 
 1. Open "SpotPlaceMoteur" & "SpotPlaceApplication" in Netbeans
 
