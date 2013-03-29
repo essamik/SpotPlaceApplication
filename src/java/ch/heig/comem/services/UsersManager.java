@@ -41,7 +41,7 @@ public class UsersManager implements UsersManagerLocal {
         ClientConfig config = new DefaultClientConfig();
         Client client = Client.create(config);
         
-        WebResource r = client.resource("http://localhost:8080/SpotPlaceMoteur-master/webresources/players");
+        WebResource r = client.resource("http://localhost:8088/SpotPlaceMoteur-master/webresources/players");
         String jsonObject = "{\"userName\" : \"" + userName + "\", \"mail\" : \"" + email + "\"}";
         
         ClientResponse response = r.type(javax.ws.rs.core.MediaType.APPLICATION_JSON).post(ClientResponse.class, jsonObject);
